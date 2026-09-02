@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เครื่องวัดแก๊ส - Gas Detector System</title>
+    <title>เครื่องตรวจจับเปลวไฟ - Fire Detection System</title>
     <style>
         * {
             margin: 0;
@@ -257,14 +257,15 @@
     <header>
         <div class="container">
             <div>
-                <h1>💨 เครื่องวัดแก๊ส</h1>
-                <p>Gas Detector System - โครงงานปวช</p>
+                <h1>� เครื่องตรวจจับเปลวไฟ</h1>
+                <p>Fire Detection System - โครงงานปวช</p>
             </div>
             <nav>
                 <a href="#hero">หน้าแรก</a>
                 <a href="#about">เกี่ยวกับ</a>
                 <a href="#project">โครงงาน</a>
-                <a href="#contact">ติดต่อ</a>
+                <a href="#fire-system">เปลวไฟ</a>
+                <a href="#contact">สถาบัน</a>
             </nav>
         </div>
     </header>
@@ -272,8 +273,8 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-            <h2>ระบบวัดแก๊สที่ทันสมัย</h2>
-            <p>โครงงานนี้เป็นการออกแบบและพัฒนาเครื่องวัดแก๊สโดยใช้เซนเซอร์ที่ทันสมัย เพื่อการตรวจวัดคุณภาพอากาศในงานอุตสาหกรรม</p>
+            <h2>ระบบตรวจจับเปลวไฟที่ทันสมัย</h2>
+            <p>โครงงานนี้เป็นการออกแบบและพัฒนาเครื่องตรวจจับเปลวไฟโดยใช้เซนเซอร์ KY-026 ที่มีความไวสูง เพื่อแจ้งเตือนความปลอดภัยในงานอุตสาหกรรม</p>
             <a href="#project" class="cta-button">ดูรายละเอียดเพิ่มเติม</a>
         </div>
     </section>
@@ -286,20 +287,20 @@
             
             <div class="content-section">
                 <h3><span class="icon">1</span>รายละเอียดโครงงาน</h3>
-                <p>เครื่องวัดแก๊สเป็นอุปกรณ์ที่ออกแบบมาเพื่อตรวจวัดความเข้มข้นของแก๊สต่างๆ ในสภาพแวดล้อม เช่น CO₂, CO, O₂ และแก๊สอันตรายอื่นๆ โครงงานนี้ใช้เซนเซอร์เบื้องต้นและระบบประมวลผลข้อมูลที่เหมาะสมกับการใช้งานในสภาพแวดล้อมอุตสาหกรรม</p>
+                <p>เครื่องตรวจจับเปลวไฟเป็นอุปกรณ์ที่ออกแบบมาเพื่อตรวจจับเปลวไฟในสภาพแวดล้อมต่างๆ โดยใช้เซนเซอร์ KY-026 ที่มีความไวสูง สามารถอ่านค่าความเข้มของเปลวไฟและแสดงผลแบบเรียลไทม์บนจอ LCD เพื่อเพิ่มความปลอดภัยในงานอุตสาหกรรม</p>
                 
                 <div class="info-grid">
                     <div class="info-card">
                         <strong>🎯 วัตถุประสงค์</strong>
-                        ออกแบบและพัฒนาระบบวัดแก๊สที่มีความเที่ยงตรงสูงและราคาประหยัด
+                        ออกแบบและพัฒนาระบบตรวจจับเปลวไฟที่มีความไวสูงและเชื่อถือได้
                     </div>
                     <div class="info-card">
                         <strong>🔧 การประยุกต์ใช้</strong>
-                        ใช้งานในโรงงาน, ห้องเก็บสินค้า, สำนักงาน และสถานที่อื่นๆ
+                        ใช้งานในโรงงาน, คลังสินค้า, ห้องสถาปัตยกรรมปิด และสถานที่อันตรายอื่นๆ
                     </div>
                     <div class="info-card">
                         <strong>📊 เอาต์พุต</strong>
-                        แสดงผลค่าการวัดแก๊สผ่านหน้าจอ LCD และสามารถบันทึกข้อมูล
+                        แสดงสถานะการตรวจจับบนหน้าจอ LCD และส่งสัญญาณแจ้งเตือนแบบเรียลไทม์
                     </div>
                 </div>
             </div>
@@ -362,17 +363,167 @@
         </div>
     </section>
 
+    <!-- Section 4: Fire Detection System -->
+    <section id="fire-system">
+        <div class="container">
+            <div class="section-title">🔥 ระบบตรวจจับเปลวไฟและแจ้งเตือน</div>
+            <div class="section-subtitle">ด้วยเซนเซอร์ KY-026 และ Arduino UNO</div>
+            
+            <div class="content-section">
+                <h3><span class="icon">4</span>วัตถุประสงค์ของระบบ</h3>
+                <p>ระบบนี้ออกแบบมาเพื่อตรวจจับเปลวไฟและแจ้งเตือนแบบเรียลไทม์โดยใช้เซนเซอร์ KY-026 ที่มีความไวสูง สามารถอ่านค่าความเข้มของเปลวไฟผ่าน Analog Output และตรวจจับสถานะเปลวไฟผ่าน Digital Output เพื่อเพิ่มความปลอดภัยในสถานที่ต่างๆ</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <strong>🎯 วัตถุประสงค์หลัก</strong>
+                        ตรวจจับเปลวไฟด้วยเซนเซอร์ KY-026 และแสดงผลบนจอ LCD แบบเรียลไทม์
+                    </div>
+                    <div class="info-card">
+                        <strong>⚡ อุปกรณ์หลัก</strong>
+                        Arduino UNO, เซนเซอร์ KY-026, LCD 16x2 พร้อมโมดูล I2C
+                    </div>
+                    <div class="info-card">
+                        <strong>🛡️ ฟังก์ชันความปลอดภัย</strong>
+                        แจ้งเตือน WARNING เมื่อพบเปลวไฟ พร้อมแสดงสถานะปกติ
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wiring Section -->
+            <div class="content-section">
+                <h3><span class="icon">🔗</span>การต่อวงจร</h3>
+                
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: #0066cc; margin-bottom: 1rem; font-weight: 600;">เซนเซอร์ KY-026</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+                        <tr style="background: #f8f9ff;">
+                            <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left; color: #0066cc; font-weight: 600;">ขา</th>
+                            <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left; color: #0066cc; font-weight: 600;">ต่อกับ Arduino UNO</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">VCC</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">5V</td>
+                        </tr>
+                        <tr style="background: #fafbff;">
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">GND</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">GND</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">AO (Analog Output)</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">A3</td>
+                        </tr>
+                        <tr style="background: #fafbff;">
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">DO (Digital Output)</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">D7</td>
+                        </tr>
+                    </table>
+
+                    <h4 style="color: #0066cc; margin-bottom: 1rem; font-weight: 600;">จอ LCD I2C</h4>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="background: #f8f9ff;">
+                            <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left; color: #0066cc; font-weight: 600;">ขา</th>
+                            <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left; color: #0066cc; font-weight: 600;">ต่อกับ Arduino UNO</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">SDA</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">A4</td>
+                        </tr>
+                        <tr style="background: #fafbff;">
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">SCL</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">A5</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">VCC</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">5V</td>
+                        </tr>
+                        <tr style="background: #fafbff;">
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">GND</td>
+                            <td style="border: 1px solid #ddd; padding: 0.8rem;">GND</td>
+                        </tr>
+                    </table>
+
+                    <div style="background: #f0f4ff; border-left: 4px solid #0099ff; padding: 1rem; margin-top: 1.5rem; border-radius: 4px;">
+                        <strong style="color: #0066cc;">💡 หมายเหตุ:</strong> ใช้ขา Analog Output (AO) สำหรับอ่านค่าความเข้มของเปลวไฟ และสามารถใช้ Digital Output (DO) สำหรับตรวจจับสถานะเปลวไฟ
+                    </div>
+                </div>
+            </div>
+
+            <!-- Display Section -->
+            <div class="content-section">
+                <h3><span class="icon">📊</span>ตัวอย่างการแสดงผลบนจอ LCD</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: #1a1a1a; color: #0f0; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', monospace; text-align: center;">
+                        <div style="font-size: 0.9rem; line-height: 2;">
+                            <div>KY-026 Monitor</div>
+                            <div>สถานะ: ปกติ</div>
+                        </div>
+                    </div>
+                    <div style="background: #1a1a1a; color: #ff3333; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', monospace; text-align: center;">
+                        <div style="font-size: 0.9rem; line-height: 2; animation: blink 0.7s infinite;">
+                            <div>KY-026 Monitor</div>
+                            <div style="font-weight: bold;">⚠️ WARNING! FIRE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    @keyframes blink {
+                        0%, 49% { opacity: 1; }
+                        50%, 100% { opacity: 0.5; }
+                    }
+                </style>
+            </div>
+
+            <!-- Components Section -->
+            <div class="content-section">
+                <h3><span class="icon">🔧</span>อุปกรณ์ที่ใช้งาน</h3>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <strong>🎮 Microcontroller</strong>
+                        Arduino UNO (ATmega328P)
+                    </div>
+                    <div class="info-card">
+                        <strong>🔥 เซนเซอร์</strong>
+                        Flame Sensor KY-026
+                    </div>
+                    <div class="info-card">
+                        <strong>📺 จอแสดงผล</strong>
+                        LCD 16x2 I2C Module
+                    </div>
+                    <div class="info-card">
+                        <strong>🔌 สาย Jumper</strong>
+                        Male-to-Male (สำหรับการต่อวงจร)
+                    </div>
+                    <div class="info-card">
+                        <strong>⚡ แหล่งจ่ายไฟ</strong>
+                        USB 5V หรือ External 5V Power
+                    </div>
+                    <div class="info-card">
+                        <strong>📋 ส่วนอื่นๆ</strong>
+                        Breadboard (ตัวเลือก)
+                    </div>
+                </div>
+
+                <div style="background: #f0f4ff; border-left: 4px solid #0099ff; padding: 1rem; margin-top: 1.5rem; border-radius: 4px;">
+                    <strong style="color: #0066cc;">✓ หมายเหตุ:</strong> ระบบนี้ใช้เพียง 8 pins บน Arduino UNO และสามารถเพิ่มคุณสมบัติเพิ่มเติม เช่น Buzzer หรือ LED สำหรับแจ้งเตือนแบบเสียง/แสง
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <h3>เครื่องวัดแก๊ส</h3>
+            <h3>🔥 เครื่องตรวจจับเปลวไฟ</h3>
             <div class="divider"></div>
-            <p>โครงงานปวช - ระบบวัดแก๊สสำหรับงานอุตสาหกรรม</p>
+            <p>โครงงานปวช - ระบบตรวจจับเปลวไฟและแจ้งเตือนความปลอดภัย</p>
             <p>📚 วิชา: 20105-2022 พื้นฐานเซนเซอร์ในงานอุตสาหกรรม</p>
             <p>👤 จัดทำโดย: นายวัชรพล สมมี</p>
             <p>🏫 วิทยาลัยเทคนิคตรัง</p>
             <div class="divider"></div>
-            <p>&copy; 2025 Gas Detector System. All rights reserved.</p>
+            <p>&copy; 2025 Fire Detection System. All rights reserved.</p>
         </div>
     </footer>
 </body>
